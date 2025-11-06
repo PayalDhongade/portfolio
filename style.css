@@ -1,133 +1,236 @@
 /* =====================
-   COLOR PALETTE
-   ===================== 
-   Deep Blue: #1561ad
-   Light Blue: #1c77ac
-   Aqua: #1dbab4
-   Accent Orange: #fc5226
-   Background: #f9fafa
+COOL BLUES PALETTE
+==================
+
+Deep Navy: #1B2631
+Slate Blue-Green: #3F4E4F
+Soft Blue: #A5C8D6
+Misty White: #F0F4F8
+Pale Green-Grey: #D9E4E0
 ===================== */
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9fafa;
-  color: #222;
-  scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(to bottom right, #F0F4F8, #D9E4E0, #A5C8D6);
+color: #1B2631;
+scroll-behavior: smooth;
+background-attachment: fixed;
+}
+
+/* Skip link */
+.skip-link {
+position: absolute;
+left: -9999px;
+}
+.skip-link:focus {
+position: static;
+padding: 8px 12px;
+background: #3F4E4F;
+color: #F0F4F8;
+border-radius: 6px;
 }
 
 /* Header */
 .header {
-  background: linear-gradient(90deg, #1561ad, #1c77ac);
-  border-bottom: 4px solid #1dbab4;
-    border-radius: 0 0 30px 30px; /* <-- Rounded bottom corners */
-
+background: linear-gradient(90deg, #1B2631, #3F4E4F);
+border-bottom: 4px solid #A5C8D6;
+border-radius: 0 0 30px 30px;
+color: #F0F4F8;
+}
+.header h5 {
+font-weight: 600;
+border-bottom: 2px solid #A5C8D6;
+display: inline-block;
+padding-bottom: 4px;
+color: #F0F4F8;
 }
 
 /* Profile Image */
 .profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 4px solid #1dbab4;
-  object-fit: cover;
-  margin-left: -15px; /* moves photo slightly left */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 4px solid #A5C8D6;
+object-fit: cover;
+box-shadow: 0 4px 10px rgba(27, 38, 49, 0.2);
+transition: transform 0.3s ease;
 }
-
 .profile-img:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
+margin-bottom: 12px;
 }
 
-/* About Me Section */
-.about-text {
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #eaf6fb;
+/* Navbar */
+.navbar {
+background-color: #1B2631;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-
-/* About Me Heading */
-.header h5 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  border-bottom: 2px solid #1dbab4;
-  display: inline-block;
-  padding-bottom: 4px;
-  margin-bottom: 6px;
-  color: #fff;
+.navbar .nav-link {
+color: #D9E4E0 !important;
+transition: color 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+color: #A5C8D6 !important;
+}
+.navbar-brand {
+font-size: 1rem;
+font-weight: 300;
+color: #1B2631 !important;
+}
+.navbar-brand .bi {
+font-size: 1.5rem;
+vertical-align: middle;
+margin-right: 6px;
+color: #A5C8D6;
+}
+.navbar-brand:hover {
+color: #A5C8D6 !important;
+text-decoration: none;
+}
+.navbar-brand .bi-code-slash {
+color: #A5C8D6 !important;
 }
 
 /* Section Titles */
 .section-title {
-  color: #1561ad;
-  border-left: 4px solid #1dbab4;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  font-weight: 600;
+color: #1B2631;
+border-left: 4px solid #A5C8D6;
+padding-left: 10px;
+margin-bottom: 20px;
+font-weight: 600;
 }
 
 /* Cards */
 .card {
-  background-color: #ffffff;
-  border: none;
-  border-left: 4px solid #1dbab4;
-  transition: all 0.3s ease;
+background-color: #ffffff;
+border: none;
+border-left: 4px solid #A5C8D6;
+transition: all 0.3s ease;
 }
-
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(21, 97, 173, 0.2);
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(63, 78, 79, 0.2);
 }
 
-/* List Items */
+/* List Group Items */
 .list-group-item {
-  border: none;
-  border-left: 4px solid #1dbab4;
-  background-color: #ffffff;
+border: none;
+border-left: 4px solid #A5C8D6;
+background-color: #ffffff;
+}
+
+/* About Me */
+.about-text {
+font-style: italic;
+font-weight: 400;
+font-size: 0.95rem;
+line-height: 1.6;
+color: #D9E4E0;
 }
 
 /* Links */
 a {
-  text-decoration: none;
+text-decoration: none;
+color: #3F4E4F;
+}
+a:hover {
+color: #A5C8D6 !important;
+text-decoration: underline;
 }
 
-a:hover {
-  color: #fc5226 !important;
-  text-decoration: underline;
+/* Buttons */
+.btn-outline-primary {
+color: #1B2631 !important;
+border-color: #A5C8D6 !important;
+background-color: transparent !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+background-color: #A5C8D6 !important;
+color: #1B2631 !important;
+box-shadow: 0 0 8px rgba(165, 200, 214, 0.6) !important;
+border-color: #A5C8D6 !important;
+}
+
+/* Modal customization */
+.modal-content {
+border-radius: 12px;
+border: 2px solid #A5C8D6;
+box-shadow: 0 0 20px rgba(165, 200, 214, 0.5);
+}
+.modal-header {
+background-color: #A5C8D6;
+color: #1B2631;
+border-bottom: none;
+}
+.modal-body {
+background-color: #F9FBFC;
+color: #1B2631;
+max-height: 70vh;
+overflow-y: auto;
+}
+#projectModalDesc {
+white-space: normal;
+line-height: 1.6;
+font-size: 0.95rem;
+}
+.modal-backdrop.show {
+opacity: 0.6;
+}
+
+/* Remove blue highlight from focused buttons */
+.btn:focus,
+.btn:active,
+.btn.show,
+.modal-content:focus {
+outline: none !important;
+box-shadow: 0 0 0 0.25rem rgba(165, 200, 214, 0.4) !important;
+}
+
+/* Light section backgrounds */
+section#education,
+section#internships,
+section#projects,
+section#certifications,
+section#skills,
+section#activities {
+background-color: #F9FBFC;
+border-radius: 12px;
+padding: 25px;
+box-shadow: 0 2px 10px rgba(63, 78, 79, 0.08);
+margin-bottom: 40px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section#education:hover,
+section#internships:hover,
+section#projects:hover,
+section#certifications:hover,
+section#skills:hover {
+transform: translateY(-3px);
+box-shadow: 0 6px 16px rgba(63, 78, 79, 0.12);
 }
 
 /* Footer */
 .footer {
-  background-color: #1561ad;
-  border-top: 4px solid #1dbab4;
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
+background-color: #1B2631;
+border-top: 4px solid #3F4E4F;
+color: #F0F4F8;
+font-size: 0.95rem;
+letter-spacing: 0.3px;
 }
 
 /* Icons */
 .bi {
-  color: #1dbab4;
+color: #A5C8D6;
 }
-
 .bi:hover {
-  color: #fc5226;
+color: #D9E4E0;
 }
 
-/* Animation for About Me (optional but elegant) */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Responsive */
+@media (max-width: 768px) {
+.header {
+border-radius: 0 0 18px 18px;
 }
-
-.about-text {
-  animation: fadeIn 1.2s ease-in-out;
 }
